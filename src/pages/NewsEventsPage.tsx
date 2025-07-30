@@ -1,6 +1,6 @@
 // pages/NewsEventsPage.tsx
 import React from 'react';
-import Card from '../components/Card';
+
 
 const NewsEventsPage: React.FC = () => {
   const blogPosts = [
