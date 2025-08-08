@@ -27,7 +27,7 @@ const NationalParksPage: React.FC = () => {
       elevation: "2,845m - 8,848m",
       highlights: ["Mount Everest", "Sherpa culture", "Ancient monasteries"],
       description: "Home to the world's highest peak, Mount Everest, this UNESCO World Heritage site offers breathtaking landscapes, unique Sherpa culture, and diverse wildlife. The park encompasses the upper catchments of the Dudh Koshi river system.",
-      image: "mount-everest",
+      image: "/images/nationalparks/sagarmathanationalpark.jpg",
       wildlife: ["Snow leopard", "Red panda", "Himalayan tahr", "Himalayan monal"],
       activities: ["Trekking", "Mountain climbing", "Cultural tours", "Wildlife viewing"]
     },
@@ -39,7 +39,7 @@ const NationalParksPage: React.FC = () => {
       elevation: "150m - 815m",
       highlights: ["One-horned rhinoceros", "Bengal tigers", "Tharu culture"],
       description: "Nepal's first national park and a UNESCO World Heritage site, Chitwan is famous for its population of one-horned rhinoceros and Bengal tigers. The park features diverse ecosystems including sal forests, grasslands, and riverine forests.",
-      image: "chitwan-rhino",
+      image: "/images/nationalparks/chitwannationalpark.jpg",
       wildlife: ["Bengal tiger", "One-horned rhinoceros", "Gharial crocodile", "Sloth bear"],
       activities: ["Jungle safari", "Elephant ride", "Canoeing", "Bird watching"]
     },
@@ -51,7 +51,7 @@ const NationalParksPage: React.FC = () => {
       elevation: "152m - 1,440m",
       highlights: ["Tiger conservation area", "Wild elephants", "Karnali River"],
       description: "The largest and most undisturbed national park in Nepal's Terai region, Bardia provides a pristine wilderness experience. It's known for its successful tiger conservation efforts and populations of wild elephants.",
-      image: "bardia-tiger",
+      image: "/images/nationalparks/bardiyanationalpark.jpg",
       wildlife: ["Royal Bengal tiger", "Asian elephant", "Gangetic dolphin", "Swamp deer"],
       activities: ["Jungle walks", "Tharu cultural experience", "River rafting", "Fishing"]
     },
@@ -63,7 +63,7 @@ const NationalParksPage: React.FC = () => {
       elevation: "792m - 7,245m",
       highlights: ["Langtang Valley", "Gosainkunda Lake", "Tamang heritage"],
       description: "Closest national park to Kathmandu, Langtang features a spectacular combination of natural and cultural attractions. The park ranges from subtropical forests to alpine meadows and snow-capped peaks.",
-      image: "langtang-valley",
+      image: "/images/nationalparks/langtangnationalpark.jpeg",
       wildlife: ["Red panda", "Himalayan black bear", "Ghoral", "Rhesus monkey"],
       activities: ["Trekking", "Mountain biking", "Pilgrimage tours", "Wildflower viewing"]
     },
@@ -75,7 +75,7 @@ const NationalParksPage: React.FC = () => {
       elevation: "2,800m - 4,039m",
       highlights: ["Rara Lake", "Remote wilderness", "Pristine forests"],
       description: "Centered around Nepal's largest lake, Rara National Park is one of the most remote protected areas. The park offers stunning mountain scenery reflected in the crystal-clear waters of Rara Lake.",
-      image: "rara-lake",
+      image: "/images/nationalparks/raranationalpark.jpg",
       wildlife: ["Red panda", "Himalayan black bear", "Musk deer", "Snow trout"],
       activities: ["Trekking", "Boating", "Bird watching", "Photography"]
     },
@@ -87,7 +87,7 @@ const NationalParksPage: React.FC = () => {
       elevation: "2,130m - 6,883m",
       highlights: ["Phoksundo Lake", "Ancient monasteries", "Snow leopards"],
       description: "Nepal's largest national park protects the trans-Himalayan ecosystem. The park features the stunning Shey Phoksundo Lake, one of Nepal's deepest and most beautiful alpine lakes.",
-      image: "phoksundo-lake",
+      image: "/images/nationalparks/sheynationalpark.jpg",
       wildlife: ["Snow leopard", "Blue sheep", "Himalayan tahr", "Tibetan wolf"],
       activities: ["Wildlife viewing", "Trekking", "Cultural tours", "Photography"]
     },
@@ -99,7 +99,7 @@ const NationalParksPage: React.FC = () => {
       elevation: "1,400m - 3,300m",
       highlights: ["Khaptad Daha", "Ashram of Khaptad Baba", "Diverse meadows"],
       description: "A mid-mountain park in the Far-Western region, Khaptad features a rolling plateau with grasslands, forests, and ponds. The park is known for its religious significance and floral diversity.",
-      image: "khaptad-meadow",
+      image: "/images/nationalparks/khaptadnationalpark.jpg",
       wildlife: ["Leopard", "Himalayan black bear", "Goral", "Rhesus macaque"],
       activities: ["Trekking", "Meditation", "Bird watching", "Wildflower viewing"]
     }
@@ -110,7 +110,7 @@ const NationalParksPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-white text-gray-800 overflow-hidden">
       {/* Header */}
-      <header className="relative z-10 container mx-auto px-4 py-8">
+      <header className="relative z-10 container mx-auto px-4 py-10">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mr-3"></div>
@@ -256,11 +256,12 @@ const NationalParksPage: React.FC = () => {
             </div>
             <div className="w-full h-full bg-gradient-to-br from-blue-50 to-cyan-50 flex items-center justify-center">
               <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
+               <img 
+  src={currentPark.image} 
+  alt={currentPark.name} 
+  className="w-full h-full object-cover"
+/>
+
                 <h3 className="text-xl font-bold text-gray-800">Park Visualization</h3>
                 <p className="text-gray-600 mt-2">{currentPark.name}</p>
               </div>

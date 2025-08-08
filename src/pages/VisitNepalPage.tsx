@@ -405,7 +405,9 @@ const TourPackages: React.FC = () => {
         </div>
         
       </div>
+
       <Trekking/>
+ 
       <NepalAdventures/>
      <NationalParksPage/>
     </div>

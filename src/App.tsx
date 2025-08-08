@@ -8,6 +8,7 @@ import GoOverseasPage from './pages/GoOverseasPage';
 import SpecialPackagesPage from './pages/SpecialPackagesPage';
 import NewsEventsPage from './pages/NewsEventsPage';
 import ChatBox from './components/Chatbox';
+import ContactPage from './pages/Contact';
 
 const App: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ const App: React.FC = () => {
             <Route path="/go-overseas" element={<GoOverseasPage />} />
             <Route path="/special-packages" element={<SpecialPackagesPage />} />
             <Route path="/news-events" element={<NewsEventsPage />} />
-            
+            <Route path="/contact" element={<ContactPage/>}/>
           </Routes>
         </main>
         <Footer />

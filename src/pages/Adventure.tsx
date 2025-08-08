@@ -1,22 +1,13 @@
 // src/components/NepalAdventures.tsx
-import React, { useState, useEffect } from 'react';
+import React, { useState,} from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const NepalAdventures: React.FC = () => {
   const [activeTour, setActiveTour] = useState<number | null>(null);
-  const [, setIsVisible] = useState(false);
   
-  useEffect(() => {
-    setIsVisible(true);
-    
-    // Auto-rotate featured tour every 5 seconds
-    const interval = setInterval(() => {
-      setActiveTour(prev => prev === null || prev === tours.length - 1 ? 0 : prev + 1);
-    }, 5000);
-    
-    return () => clearInterval(interval);
-  }, []);
+  
+ 
 
   const tours = [
     {
@@ -216,27 +207,6 @@ const NepalAdventures: React.FC = () => {
                 </div>
               </motion.div>
             ))}
-          </div>
-        </motion.div>
-
-        {/* Call to action */}
-        <motion.div 
-          className="text-center py-16"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Ready for Your Himalayan Adventure?</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
-            Join thousands of adventurers who've experienced the magic of Nepal with our expert guides and sustainable tourism practices.
-          </p>
-          <div className="flex flex-wrap justify-center gap-6">
-            <button className="px-10 py-4 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-full font-bold text-lg text-white shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-105">
-              Book Your Expedition
-            </button>
-            <button className="px-10 py-4 bg-transparent border-2 border-blue-600 rounded-full font-bold text-lg text-blue-600 hover:bg-blue-50 transition-all duration-300">
-              Download Brochure
-            </button>
           </div>
         </motion.div>
       </div>
