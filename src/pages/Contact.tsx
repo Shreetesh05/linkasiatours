@@ -48,7 +48,7 @@ const handleSubmit = (e: React.FormEvent) => {
       <div className="max-w-5xl mx-auto">
         {/* Page Header */}
         <div className="text-center mb-16">
-          <h1 className="text-3xl font-light text-gray-800 mb-4">Get in Touch</h1>
+          <h1 className="text-3xl mt-8 font-light text-gray-800 mb-4">Get in Touch</h1>
           <div className="w-24 h-0.5 bg-cyan-500 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-xl mx-auto">
             We'd love to hear from you. Our team is ready to answer any questions about your next Asian adventure.

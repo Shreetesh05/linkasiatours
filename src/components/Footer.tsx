@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">About Us</h3>
             <p className="text-gray-600">
-              MazzakoTrip provides exceptional travel experiences with a focus on sustainability and authentic cultural immersion.
+              Link Asia Tours  provides exceptional travel experiences with a focus on sustainability and authentic cultural immersion.
             </p>
           </div>
           
@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
               <p className="mb-1">Prayag Sanyas Aasram, Kathmandu</p>
               <p className="mb-1">Nepal</p>
               <p className="mb-1">Phone: +977 1 1234567</p>
-              <p className="mb-1">Email: info@mazzakotrip.com</p>
+              <p className="mb-1">Email: infolinkasiatours@gmail.com</p>
             </address>
           </div>
         </div>
