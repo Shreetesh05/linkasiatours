@@ -135,7 +135,7 @@ const KoreaItinerary = () => {
   const currentDay = itinerary.find(day => day.day === activeDay);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-indigo-100 py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 mt-10 to-indigo-100 py-12 px-4">
       {/* Header */}
       <div className="max-w-7xl mx-auto text-center mb-16">
         <motion.h1 
