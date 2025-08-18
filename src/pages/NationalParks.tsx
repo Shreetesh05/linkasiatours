@@ -122,37 +122,16 @@ const NationalParksPage: React.FC = () => {
       {/* Main Content */}
       <main className="relative z-10 container mx-auto px-4 py-8">
         {/* Hero Section */}
-        <section className="text-center py-16">
-          <motion.h1 
-            className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <span className="bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-500 bg-clip-text text-transparent">
-              NEPAL'S NATIONAL PARKS
-            </span>
-          </motion.h1>
-          
-          <motion.p 
-            className="text-xl text-gray-600 max-w-3xl mx-auto mb-10"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-          >
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-cyan-500 mb-4">
+           
+NEPAL'S NATIONAL PARKS
+          </h1>
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Discover the breathtaking biodiversity and majestic landscapes of Nepal's protected wilderness areas
-          </motion.p>
-          
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
-          >
-            <button className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold text-lg hover:shadow-lg hover:shadow-blue-500/30 transition-all">
-              EXPLORE THE WILDERNESS
-            </button>
-          </motion.div>
-        </section>
+          </p>
+        </div>
+
         
         {/* Parks Navigation */}
         <section className="py-8 mb-12">

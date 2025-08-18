@@ -9,6 +9,11 @@ import SpecialPackagesPage from './pages/SpecialPackagesPage';
 import NewsEventsPage from './pages/NewsEventsPage';
 import ChatBox from './components/Chatbox';
 import ContactPage from './pages/Contact';
+import India from './overseas/India';
+import Vietnam from './overseas/Vietnam';
+import Thailand from './overseas/Thailand';
+import Malaysia from './overseas/Malaysia';
+
 
 const App: React.FC = () => {
   return (
@@ -24,6 +29,10 @@ const App: React.FC = () => {
             <Route path="/special-packages" element={<SpecialPackagesPage />} />
             <Route path="/news-events" element={<NewsEventsPage />} />
             <Route path="/contact" element={<ContactPage/>}/>
+       <Route path="/overseas/India" element={<India />} />
+       <Route path="/overseas/Vietnam" element={<Vietnam />} />
+       <Route path="/overseas/Thailand" element={<Thailand />} />
+       <Route path="/overseas/Malaysia" element={<Malaysia />} />
           </Routes>
         </main>
         <Footer />

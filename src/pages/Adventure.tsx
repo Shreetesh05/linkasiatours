@@ -1,7 +1,7 @@
 // src/components/NepalAdventures.tsx
 import React, { useState,} from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+
 
 const NepalAdventures: React.FC = () => {
   const [activeTour, setActiveTour] = useState<number | null>(null);
@@ -98,45 +98,14 @@ const NepalAdventures: React.FC = () => {
       {/* Main content container */}
       <div className="container mx-auto px-4 py-16 relative z-10">
         {/* Hero header */}
-        <motion.div 
-          className="text-center mb-16 mt-10"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <motion.h1 
-            className="text-5xl md:text-7xl font-extrabold mb-6"
-          >
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-700">
-              NEPAL ADVENTURES
-            </span>
-          </motion.h1>
-          
-          <motion.p 
-            className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-600 mb-8"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-          >
-            Experience the Himalayas like never before with our expertly crafted expeditions
-          </motion.p>
-          
-          <motion.div
-            className="flex flex-wrap justify-center gap-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
-          >
-            <Link to="/customizetours">
-              <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-full font-bold text-lg text-white shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-105">
-                Explore Adventures
-              </button>
-              <button className="px-8 py-3 bg-transparent border-2 border-blue-600 rounded-full font-bold text-lg text-blue-600 hover:bg-blue-50 transition-all duration-300">
-                Customize Tour
-              </button>
-            </Link>
-          </motion.div>
-        </motion.div>
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-cyan-500 mb-4">
+            NEPAL ADVENTURES
+          </h1>
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+           Experience the Himalayas like never before with our expertly crafted expeditions. From trekking to paragliding, we offer the ultimate adventure tours in Nepal.
+          </p>
+        </div>
 
         {/* Featured tour */}
         

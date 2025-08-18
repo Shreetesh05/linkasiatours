@@ -255,19 +255,26 @@ const tours: Tour[] = [
 // Component
 const TourPackages: React.FC = () => {
   return (
+    
      <div className="pt-16">
+      
        {/* Hero */}
        <div className="bg-gradient-to-r from-blue-50 to-cyan-50 py-20">
-         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-           <h1 className="text-4xl font-bold text-gray-900">Discover Nepal</h1>
-           <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-             Experience the land of Himalayas, ancient cultures, and breathtaking landscapes
-           </p>
-         </div>
-       </div>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    {/* Group wrapper for hover effect */}
+    <div className="text-center mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-cyan-500 mb-4">
+Discover Nepal          </h1>
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+
+Experience the land of Himalayas, ancient cultures, and breathtaking landscapes          </p>
+        </div>
+  </div>
+</div>
 
 
-        <section className="py-16">
+
+        <section className="py-6">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       {/* Left Column: Text */}
@@ -307,13 +314,14 @@ const TourPackages: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="h-1 w-24 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full mx-auto mb-4" />
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">
-            Nepal's Premium Tour Experiences
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Curated cultural, adventure and spiritual journeys with authentic Nepalese hospitality
-          </p>
+         <div className="text-center mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-cyan-500 mb-4">
+           
+ Nepal's Premium Tour Experiences
+          </h1>
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+Curated cultural, adventure and spiritual journeys with authentic Nepalese hospitality          </p>
+        </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
