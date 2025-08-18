@@ -13,6 +13,9 @@ import India from './overseas/India';
 import Vietnam from './overseas/Vietnam';
 import Thailand from './overseas/Thailand';
 import Malaysia from './overseas/Malaysia';
+import Singapore from './overseas/Singapore';
+
+
 
 
 const App: React.FC = () => {
@@ -33,6 +36,8 @@ const App: React.FC = () => {
        <Route path="/overseas/Vietnam" element={<Vietnam />} />
        <Route path="/overseas/Thailand" element={<Thailand />} />
        <Route path="/overseas/Malaysia" element={<Malaysia />} />
+       <Route path="/overseas/Singapore" element={<Singapore />} />
+       
           </Routes>
         </main>
         <Footer />

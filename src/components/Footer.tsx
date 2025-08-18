@@ -3,10 +3,22 @@ import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 const socialIcons = {
-  facebook: <FaFacebookF className="w-5 h-5" />,
-  twitter: <FaTwitter className="w-5 h-5" />,
-  instagram: <FaInstagram className="w-5 h-5" />,
-  linkedin: <FaLinkedinIn className="w-5 h-5" />,
+  facebook: {
+    url: "https://www.facebook.com/linkasiatoursnepal/",
+    icon: <FaFacebookF className="w-5 h-5" />,
+  },
+  twitter: {
+    url: "https://twitter.com/yourpage",
+    icon: <FaTwitter className="w-5 h-5" />,
+  },
+  instagram: {
+    url: "https://instagram.com/yourpage",
+    icon: <FaInstagram className="w-5 h-5" />,
+  },
+  linkedin: {
+    url: "https://linkedin.com/in/yourprofile",
+    icon: <FaLinkedinIn className="w-5 h-5" />,
+  },
 };
 const Footer: React.FC = () => {
   return (
@@ -66,7 +78,7 @@ const Footer: React.FC = () => {
             className="bg-white p-2 rounded-full shadow-sm text-gray-600 hover:text-cyan-500 hover:shadow-md transition-all duration-300"
           >
             <span className="sr-only">{platform}</span>
-            {socialIcons[platform as keyof typeof socialIcons]}
+            {socialIcons[platform as keyof typeof socialIcons].icon}
           </a>
         ))}
       </div>
@@ -88,13 +100,15 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Contact Us</h3>
             <address className="not-italic text-gray-600">
-              <p className="mb-1">Prayag Sanyas Aasram, Kathmandu</p>
-              <p className="mb-1">Nepal</p>
-              <p className="mb-1">Phone: +977 1 1234567</p>
+              <p className="mb-1">📍 Airport Gate, Ashram Marga, Kathmandu-09, Nepal</p>
+              <p className="mb-1">📍 Suwon Station, Gate-10, South Korea</p>
+              <p className="mb-1">📍 Nepal, 📍South Korea</p>
+              <p className="mb-1"> Phone: +977-9856082660 | +977-1-5912660 | +977-9841431584 | +82-010-5877-5512</p>
               <p className="mb-1">Email: infolinkasiatours@gmail.com</p>
             </address>
           </div>
         </div>
+        
         
         <div className="mt-12 pt-8 border-t border-gray-200 text-center">
           <p className="text-gray-500 text-sm">
