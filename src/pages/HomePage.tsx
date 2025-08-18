@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, type MotionProps } from "framer-motion";
-import { ArrowRight, Sparkles, MapPin, Star } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 import Card from "../components/Card";
 
 // === Local utility ===
