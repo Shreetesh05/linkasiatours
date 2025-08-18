@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { motion, type MotionProps } from "framer-motion";
 import { ArrowRight, Star } from "lucide-react";
 import Card from "../components/Card";
+import { Link } from "react-router-dom";
 
 // === Local utility ===
 const cn = (...classes: (string | false | undefined | null)[]) =>
@@ -349,12 +350,12 @@ const Home: React.FC = () => {
             className="mt-8"
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
           >
-            <a
-              href="#destinations"
+            <Link
+              to="/visit-nepal"
               className="inline-block px-8 py-3 rounded-full bg-blue-600 text-white font-semibold shadow-lg hover:bg-blue-700 hover:scale-105 transform transition-all duration-300"
             >
               Explore Destinations
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
       </motion.div>
